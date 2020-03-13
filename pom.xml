@@ -77,7 +77,7 @@
                 <configuration>
                     <transformers>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                            <mainClass>com.amazonaws.mcs.examples.OrderFetcher</mainClass>
+                            <mainClass>software.aws.mcs.examples.OrderFetcher</mainClass>
                         </transformer>
                     </transformers>
                 </configuration>
