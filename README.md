@@ -18,7 +18,7 @@
  ## EC2
 
  The OrdersFetcher is a standalone class for retrieving orders from the acme.orders table, as part of the example in the
- documentation at .
+ documentation at https://docs.aws.amazon.com/mcs/latest/devguide/identity-and-access-mgmt.html#IAM.Samples.Roles.
 
  You can copy the shaded JAR, along with the `cassandra_truststore.jks` file, to an EC2 instance that has an associated IAM role for MCS
  access. You can execute the JAR with the command:
@@ -30,7 +30,7 @@
    <region> <endpoint> <customer ID>
  ```
 
- For example, to lookup customer "1234" in us-east-2:
+ For example, to lookup orders for our pretend customer "1234" in us-east-2:
 
  ``` shell
  java -Djavax.net.ssl.trustStore=./cassandra_truststore.jks \
