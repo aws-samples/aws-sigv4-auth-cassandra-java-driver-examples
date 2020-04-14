@@ -45,7 +45,7 @@ public class OrderFetcher {
         SigV4AuthProvider provider = new SigV4AuthProvider(args[0]);
         List<InetSocketAddress> contactPoints = Collections.singletonList(new InetSocketAddress(args[1], 9142));
 
-        try (CqlSession session = CqlSession.builder().addContactPoints(contactPoints).withAuthProvider(provider).build()) {
+        try (CqlSession session = CqlSession.builder().addContactPoints(contactPoints).withAuthProvider(provider).withLocalDatacenter(args[0]).build()) {
             // Use a prepared query for quoting
             PreparedStatement prepared = session.prepare("select * from acme.orders where customer_id = ?");
 
