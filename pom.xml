@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>software.aws.mcs</groupId>
     <artifactId>aws-sigv4-auth-cassandra-java-driver-examples</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>AWS SigV4 Auth Java Driver 4.x Examples</name>
     <organization>
         <name>Amazon Web Services</name>
