@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.3] - 2020-05-15
+
+Update the SigV4 plugin to fix signature mismatch on Windows
+
 ## [1.0.2] - 2020-04-14
 
 Resolves issue #4 by removing the `local-datacenter` parameter from the `application.conf` file, and uses the region
