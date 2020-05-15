@@ -13,7 +13,7 @@
  mvn package
  ```
 
- Once this is complete, you should have an `target/aws-sigv4-auth-cassandra-java-driver-examples-1.0.0.jar` file.
+ Once this is complete, you should have an `target/aws-sigv4-auth-cassandra-java-driver-examples-1.0.3.jar` file.
 
  ## EC2
 
@@ -26,7 +26,7 @@
  ``` shell
  java -Djavax.net.ssl.trustStore=./cassandra_truststore.jks \
    -Djavax.net.ssl.trustStorePassword=amazon \
-   -jar aws-sigv4-auth-cassandra-java-driver-examples-1.0.0.jar \
+   -jar aws-sigv4-auth-cassandra-java-driver-examples-1.0.3.jar \
    <region> <endpoint> <customer ID>
  ```
 
@@ -35,7 +35,7 @@
  ``` shell
  java -Djavax.net.ssl.trustStore=./cassandra_truststore.jks \
    -Djavax.net.ssl.trustStorePassword=amazon \
-   -jar aws-sigv4-auth-cassandra-java-driver-examples-1.0.0.jar \
+   -jar aws-sigv4-auth-cassandra-java-driver-examples-1.0.3.jar \
    us-east-2 cassandra.us-east-2.amazonaws.com 1234
  ```
 
