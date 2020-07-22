@@ -14,8 +14,8 @@
     <licenses>
         <license>
             <name>MIT License</name>
-	    <url>http://www.opensource.org/licenses/mit-license.php</url>
-	    <distribution>repo</distribution>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
 
@@ -41,6 +41,11 @@
             <groupId>software.aws.mcs</groupId>
             <artifactId>aws-sigv4-auth-cassandra-java-driver-plugin</artifactId>
             <version>4.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.11.543</version>
         </dependency>
         <!-- Test Dependencies -->
         <dependency>
@@ -98,7 +103,7 @@
                     <copyrightOwners>Amazon.com, Inc. or its affiliates. All Rights Reserved.</copyrightOwners>
                     <licenseName>mit_0</licenseName>
                     <licenseResolver>${project.baseUri}/src/license</licenseResolver>
-                 </configuration>
+                </configuration>
                 <executions>
                     <execution>
                         <id>first</id>
